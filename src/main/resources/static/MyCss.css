@@ -1,0 +1,134 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightblue;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.btn-create {
+}
+
+#btn-viewOne {
+    background-color: #4CAF50;
+}
+
+#btn-deleteOne {
+    background-color: red;
+}
+
+#btn-updateOne {
+    background-color: blue;
+}
+
+#btn-deleteOneFood {
+    font-size: 1.5em;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.madspild-info {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.madspild-info p {
+    margin-bottom: 15px;
+}
+
+.overskudsmad-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.overskudsmad-container h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overskudsmad-container h3 {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #4CAF50;
+    vertical-align: middle;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.centered-content {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.centered-content h1 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.btn-create {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.eller-text {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #4CAF50;
+    vertical-align: middle;
+}
