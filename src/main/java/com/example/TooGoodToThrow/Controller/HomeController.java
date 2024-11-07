@@ -25,6 +25,16 @@ public class HomeController {
         return "home/index";
     }
 
+    @GetMapping("/createVirksomhed")
+    public String createVirksomhed(){
+        return "home/createVirksomhed";
+    }
+
+    @GetMapping("/createOrganisation")
+    public String createOrganisation(){
+        return "home/createOrganisation";
+    }
+
     @GetMapping("/listFood")
     public String listFood(Model model){
         model.addAttribute("madvarer", madvareService.fetchAll());

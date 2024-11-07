@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
 </head>
 <body>
-    <h1>Create a new Person</h1>
+    <a href="/">
+        <button class="btn-index btn" id="btn-index">Til forsiden</button>
+    </a>
+    <h1>Opret en overskydende madvare - virksomhed</h1>
     <form action="/create" method="post">
-        <label>First name</label>
-        <input type="text" name="firstname">
-        <label>Last name</label>
-        <input type="text" name="lastname">
-        <input type="submit" value="Create new person">
+        <label>Madnavn</label>
+        <input type="text" name="madnavn">
+        <br>
+        <label>Pris</label>
+        <input type="text" name="pris">
+        <br>
+        <label>Antal</label>
+        <input type="text" name="antal">
+        <br>
+        <label>Udløbsdato</label>
+        <input type="text" name="udlobsdato">
+        <br>
+        <label>Afhentningsadresse</label>
+        <input type="text" name="adresse">
+        <br>
+        <label>Virksomhed</label>
+        <input type="text" name="virksomhed">
+        <br>
+        <input type="submit" value="Opret overskudsmad">
     </form>
 </body>
 </html>
