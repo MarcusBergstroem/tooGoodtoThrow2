@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="MyCss.css">
+    <link rel="stylesheet" type="text/css" href="createVirksomhed.css">
 </head>
 <body>
 <img src="/images/logo.png" alt="Too Good To Throw Logo" class="logo">
     <a href="/">
         <button class="btn-index btn" id="btn-index">Til forsiden</button>
     </a>
-    <h1>Opret en overskydende madvare - virksomhed</h1>
-    <form action="/create" method="post">
-        <label>Madnavn</label>
-        <input type="text" name="madnavn">
-        <br>
-        <label>Pris</label>
-        <input type="text" name="pris">
-        <br>
-        <label>Antal</label>
-        <input type="text" name="antal">
-        <br>
-        <label>Udløbsdato</label>
-        <input type="text" name="udlobsdato">
-        <br>
-        <label>Afhentningsadresse</label>
-        <input type="text" name="adresse">
-        <br>
-        <label>Virksomhed</label>
-        <input type="text" name="virksomhed">
-        <br>
-        <input type="submit" value="Opret overskudsmad">
-    </form>
+<h1>Virksomhed</h1>
+<h2>Sælg overskudsmad</h2>
+<form class="createVirksomhed" action="/create" method="post">
+    <label>Hvad vil du sælge</label>
+    <input type="text" name="madnavn" placeholder="Fx. 10 bananer"><br>
+
+    <label>Pris</label>
+    <input type="text" name="pris" placeholder="Fx. 5"><br>
+
+    <label>Antal</label>
+    <input type="text" name="antal" placeholder="Fx. 3"><br>
+
+    <label>Udløbsdato</label>
+    <input type="text" name="udlobsdato" placeholder="ÅÅÅÅ/MM/DD"><br>
+
+    <label>Afhentningsadresse</label>
+    <input type="text" name="adresse" placeholder="Fx. Rådhuspladsen 5 KBH H"><br>
+
+    <label>Virksomhedsnavn</label>
+    <input type="text" name="virksomhed" placeholder="Fx. NETTO"><br>
+
+    <input type="submit" value="Sæt til salg" class="submit-button">
+</form>
 </body>
 </html>

@@ -1,0 +1,68 @@
+
+.createVirksomhed {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #f0f8ff;
+    font-family: Georgia, Georgia;
+}
+
+
+h1, h2 {
+    text-align: center;
+    font-family: Georgia, Georgia;
+    color: #333;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.createVirksomhed label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #333;
+}
+
+.createVirksomhed input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 2px solid #999;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.createVirksomhed input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #87CEFA; /
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: Georgia, Georgia;
+}
+
+.submit-button:hover {
+    background-color: #5fbae9;
+}
+
+.submit-button:active {
+    background-color: #4682b4;
+}
