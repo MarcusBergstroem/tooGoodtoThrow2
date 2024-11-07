@@ -48,7 +48,7 @@ tr:nth-child(even) {
 }
 
 #btn-viewOneFood {
-background-color: blue;
+background-color: #1971c2;
 }
 
 .logo {
@@ -66,7 +66,7 @@ background-color: blue;
     background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    text-align: center;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -77,27 +77,40 @@ background-color: blue;
 }
 
 .overskudsmad-container {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     margin-top: 30px;
 }
 
 .overskudsmad-container h2 {
+    display: inline;
     color: #4CAF50;
-    font-size: 24px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
 .overskudsmad-container h3 {
     display: inline-block;
     margin: 0 10px;
-    font-size: 18px;
-    color: #4CAF50;
+    font-size: 14px;
+    color: #1971c2;
     vertical-align: middle;
 }
 
 .btn {
     background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #1971c2;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -115,12 +128,12 @@ background-color: blue;
 
 .centered-content {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .centered-content h1 {
     font-size: 32px;
-    color: #4CAF50;
+    color: black;
     margin-bottom: 15px;
 }
 
@@ -129,12 +142,18 @@ background-color: blue;
     font-size: 16px;
 }
 
-.eller-text {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 18px;
-    color: #4CAF50;
-    vertical-align: middle;
-}
 
-table {    width: 70%;    border-collapse: collapse;    margin-top: 20px;    background-color: #fff;    border-radius: 8px;    overflow: hidden;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}/* Tabelens overskrifter */th {    background-color: #f7f7f7;    color: #333;    font-weight: bold;    padding: 12px 15px;    text-align: left;    border-bottom: 2px solid #ddd;}/* Tabelens celler */td {    padding: 5px 10px;    border-bottom: 1px solid #eee;    color: #555;}/* Skiftevis række farve for læsbarhed */tr:nth-child(even) {    background-color: #f9f9f9;}/* Hover-effekt på rækker */tr:hover {    background-color: #f1f1f1;}/* Responsiv tabel */.table-container {    overflow-x: auto;    margin-top: 20px;}body {    font-family: 'Georgia', serif;}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}/* Tabelens overskrifter */
+
+th {
+    background-color: #f7f7f7;
+    color: #333;    font-weight: bold;    padding: 12px 15px;    text-align: left;    border-bottom: 2px solid #ddd;}/* Tabelens celler */td {    padding: 5px 10px;    border-bottom: 1px solid #eee;    color: #555;}/* Skiftevis række farve for læsbarhed */tr:nth-child(even) {    background-color: #f9f9f9;}/* Hover-effekt på rækker */tr:hover {    background-color: #f1f1f1;}/* Responsiv tabel */.table-container {    overflow-x: auto;    margin-top: 20px;}body {    font-family: 'Georgia', serif;}
