@@ -43,11 +43,3 @@ tr:nth-child(even) {
 #btn-updateOne {
     background-color: blue; /* Grøn for update-knap */
 }
-.logo {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 110px; /* Adjust size as needed */
-    height: auto;
-}
-
