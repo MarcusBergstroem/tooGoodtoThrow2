@@ -17,5 +17,9 @@
     <p>Udløbsdato: <span th:text="${madvare.udlobsdato}"/></p>
     <p>Afhentningsadresse: <span th:text="${madvare.adresse}"/></p>
     <p>Virksomhed: <span th:text="${madvare.virksomhed}"/></p>
+    <br>
+    <a th:href="@{'/deleteOneFood/' + ${madvare.id}}">
+        <button class="btn-deleteOneFood btn" id="btn-deleteOneFood">Bekræft køb af madvare</button>
+    </a>
 </body>
 </html>
