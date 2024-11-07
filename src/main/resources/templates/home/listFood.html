@@ -8,7 +8,7 @@
 <body>
 <h1>Person list</h1>
 <a href="/create">
-    <button class="btn-create btn" id="btn-create">Create a new person</button>
+    <button class="btn-create btn" id="btn-create">Opret ny mad</button>
 </a>
 
 <table>
@@ -20,19 +20,19 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="person: ${persons}">
-        <td th:text="${person.id}"></td>
-        <td th:text="${person.firstname}"></td>
-        <td th:text="${person.lastname}"></td>
+    <tr th:each="madvare: ${madvarer}">
+        <td th:text="${madvare.id}"></td>
+        <td th:text="${madvare.madnavn}"></td>
+        <td th:text="${madvare.antal}"></td>
         <td>
-            <a th:href="@{'/viewOne/' + ${person.id}}">
-                <button class="btn-viewOne btn" id="btn-viewOne">View a person</button>
+            <a th:href="@{'/viewOneFood/' + ${madvare.id}}">
+                <button class="btn-viewOneFood btn" id="btn-viewOneFood">Køb</button>
             </a>
-            <a th:href="@{'/deleteOne/' + ${person.id}}">
-                <button class="btn-deleteOne btn" id="btn-deleteOne">Delete a person</button>
+            <a th:href="@{'/deleteOneFood/' + ${madvare.id}}">
+                <button class="btn-deleteOneFood btn" id="btn-deleteOneFood">Slet</button>
             </a>
-            <a th:href="@{'/updateOne/' + ${person.id}}">
-                <button class="btn-updateOne btn" id="btn-updateOne">Update a person</button>
+            <a th:href="@{'/updateOneFood/' + ${madvare.id}}">
+                <button class="btn-updateOneFood btn" id="btn-updateOneFood">Opdater</button>
             </a>
         </td>
     </tr>

@@ -22,7 +22,7 @@ public class HomeController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("madvarer", madvareService.fetchAll());
-        return "home/index";
+        return "home/listFood";
     }
 
     @GetMapping("/create")
