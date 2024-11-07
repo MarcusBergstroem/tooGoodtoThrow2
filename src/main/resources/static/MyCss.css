@@ -47,6 +47,10 @@ tr:nth-child(even) {
     font-size: 1.5em;
 }
 
+#btn-viewOneFood {
+background-color: blue;
+}
+
 .logo {
     position: absolute;
     top: 20px;
@@ -132,3 +136,5 @@ tr:nth-child(even) {
     color: #4CAF50;
     vertical-align: middle;
 }
+
+table {    width: 70%;    border-collapse: collapse;    margin-top: 20px;    background-color: #fff;    border-radius: 8px;    overflow: hidden;    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}/* Tabelens overskrifter */th {    background-color: #f7f7f7;    color: #333;    font-weight: bold;    padding: 12px 15px;    text-align: left;    border-bottom: 2px solid #ddd;}/* Tabelens celler */td {    padding: 5px 10px;    border-bottom: 1px solid #eee;    color: #555;}/* Skiftevis række farve for læsbarhed */tr:nth-child(even) {    background-color: #f9f9f9;}/* Hover-effekt på rækker */tr:hover {    background-color: #f1f1f1;}/* Responsiv tabel */.table-container {    overflow-x: auto;    margin-top: 20px;}body {    font-family: 'Georgia', serif;}
