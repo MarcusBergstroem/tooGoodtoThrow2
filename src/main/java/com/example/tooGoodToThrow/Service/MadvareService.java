@@ -49,6 +49,8 @@ public class MadvareService {
 
         int counter = 1;
 
+        int nyttal = 4;
+
         // Loop through each person and update the desired field
         for (Madvare madvare : madvarer) {
             // Opdater det ønskede felt
