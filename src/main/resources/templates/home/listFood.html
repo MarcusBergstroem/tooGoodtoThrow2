@@ -14,11 +14,11 @@
 <table>
     <thead>
     <tr>
-        <th>Id</th>
+        <th>Nr.</th>
         <th>Madvare</th>
-        <th>Pris</th>
-        <th>Antal</th>
-        <th>Udløbsdato</th>
+        <th style="text-align: right;">Pris</th>
+        <th style="text-align: right;"> Antal tilbage</th>
+        <th style="text-align: right;">Udløbsdato</th>
         <th>Adresse</th>
         <th>Virksomhed</th>
     </tr>
@@ -27,9 +27,9 @@
     <tr th:each="madvare: ${madvarer}">
         <td th:text="${madvare.id}"></td>
         <td th:text="${madvare.madnavn}"></td>
-        <td th:text="${madvare.pris}"></td>
-        <td th:text="${madvare.antal}"></td>
-        <td th:text="${madvare.udlobsdato}"></td>
+        <td style="text-align: right;" th:text="${#numbers.formatDecimal(madvare.pris, 1, 2)}"></td>
+        <td style="text-align: right;" th:text="${madvare.antal}"></td>
+        <td style="text-align: right;" th:text="${madvare.udlobsdato}"></td>
         <td th:text="${madvare.adresse}"></td>
         <td th:text="${madvare.virksomhed}"></td>
         <td>

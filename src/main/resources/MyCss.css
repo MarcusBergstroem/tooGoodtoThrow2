@@ -1,0 +1,119 @@
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.btn {
+    background-color: #4CAF50; /* Standard grøn */
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.btn-create {
+    /* Ingen specifik stil angivet her */
+}
+
+#btn-viewOneFood {
+    background-color: blue; /* Grøn for view-knap */
+}
+
+#btn-deleteOne {
+    background-color: red; /* Rød for delete-knap */
+}
+
+#btn-updateOne {
+    background-color: blue; /* Grøn for update-knap */
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+/* Overskrift */
+h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Knapper */
+.btn {
+    background-color: #4CAF50; /* Grøn farve */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+#btn-index {
+    background-color: #555;
+}
+
+#btn-index:hover {
+    background-color: #444;
+}
+
+/* Tabel */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabelens overskrifter */
+th {
+    background-color: #f7f7f7;
+    color: #333;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Tabelens celler */
+td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+/* Skiftevis række farve for læsbarhed */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover-effekt på rækker */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsiv tabel */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Georgia', serif;
+}
