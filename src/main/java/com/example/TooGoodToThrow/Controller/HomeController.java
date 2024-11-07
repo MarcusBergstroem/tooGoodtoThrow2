@@ -22,6 +22,12 @@ public class HomeController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("madvarer", madvareService.fetchAll());
+        return "home/index";
+    }
+
+    @GetMapping("/listFood")
+    public String listFood(Model model){
+        model.addAttribute("madvarer", madvareService.fetchAll());
         return "home/listFood";
     }
 
@@ -36,10 +42,10 @@ public class HomeController {
         return "redirect:/";
     }
 
-    @GetMapping("/viewOne/{id}")
-    public String viewOne(@PathVariable("id") int id, Model model){
-        model.addAttribute("person", madvareService.findMadvareById(id));
-        return "viewOneFood";
+    @GetMapping("/viewOneFood/{id}")
+    public String viewOneFood(@PathVariable("id") int id, Model model){
+        model.addAttribute("madvare", madvareService.findMadvareById(id));
+        return "home/viewOneFood";
     }
 
     @GetMapping("/deleteOne/{id}")

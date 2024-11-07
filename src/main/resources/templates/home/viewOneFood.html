@@ -5,9 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>View a person</h1>
-    <p>Id: <span th:text="${person.id}"/></p>
-    <p>First name: <span th:text="${person.firstname}"/></p>
-    <p>Last name: <span th:text="${person.lastname}"/></p>
+    <h1>Køb denne madvare</h1>
+    <p>Id: <span th:text="${madvare.id}"/></p>
+    <p>Madnavn: <span th:text="${madvare.madnavn}"/></p>
+    <p>Pris: <span th:text="${madvare.pris}"/></p>
+    <p>Antal: <span th:text="${madvare.antal}"/></p>
+    <p>Udløbsdato: <span th:text="${madvare.udlobsdato}"/></p>
+    <p>Afhentningsadresse: <span th:text="${madvare.adresse}"/></p>
+    <p>Virksomhed: <span th:text="${madvare.virksomhed}"/></p>
 </body>
 </html>

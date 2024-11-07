@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="MyCSS.css">
 </head>
 <body>
-<h1>Person list</h1>
+<h1>Overskudsmad</h1>
 <a href="/create">
     <button class="btn-create btn" id="btn-create">Opret ny mad</button>
 </a>
@@ -15,25 +15,35 @@
     <thead>
     <tr>
         <th>Id</th>
-        <th>First name</th>
-        <th>Last name</th>
+        <th>Madvare</th>
+        <th>Pris</th>
+        <th>Antal</th>
+        <th>Udløbsdato</th>
+        <th>Adresse</th>
+        <th>Virksomhed</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="madvare: ${madvarer}">
         <td th:text="${madvare.id}"></td>
         <td th:text="${madvare.madnavn}"></td>
+        <td th:text="${madvare.pris}"></td>
         <td th:text="${madvare.antal}"></td>
+        <td th:text="${madvare.udlobsdato}"></td>
+        <td th:text="${madvare.adresse}"></td>
+        <td th:text="${madvare.virksomhed}"></td>
         <td>
             <a th:href="@{'/viewOneFood/' + ${madvare.id}}">
                 <button class="btn-viewOneFood btn" id="btn-viewOneFood">Køb</button>
             </a>
+            <!--
             <a th:href="@{'/deleteOneFood/' + ${madvare.id}}">
                 <button class="btn-deleteOneFood btn" id="btn-deleteOneFood">Slet</button>
             </a>
             <a th:href="@{'/updateOneFood/' + ${madvare.id}}">
                 <button class="btn-updateOneFood btn" id="btn-updateOneFood">Opdater</button>
             </a>
+            -->
         </td>
     </tr>
     </tbody>
