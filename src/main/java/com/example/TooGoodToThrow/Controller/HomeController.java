@@ -43,7 +43,7 @@ public class HomeController {
 
     @GetMapping("/create")
     public String create(){
-        return "createVirksomhed";
+        return "create";
     }
 
     @PostMapping("/create")
