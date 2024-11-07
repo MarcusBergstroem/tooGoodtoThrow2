@@ -1,5 +1,5 @@
-package com.example.tooGoodToThrow.Repository;
-import com.example.tooGoodToThrow.Model.Madvare;
+package com.example.TooGoodToThrow.Repository;
+import com.example.TooGoodToThrow.Model.Madvare;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

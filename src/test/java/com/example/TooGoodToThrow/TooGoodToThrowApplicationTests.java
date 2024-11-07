@@ -1,10 +1,10 @@
-package com.example.tooGoodToThrow;
+package com.example.TooGoodToThrow;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MySpringDbDemo22ApplicationTests {
+class TooGoodToThrowApplicationTests {
 
     @Test
     void contextLoads() {

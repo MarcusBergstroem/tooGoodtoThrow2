@@ -1,4 +1,4 @@
-package com.example.tooGoodToThrow.Model;
+package com.example.TooGoodToThrow.Model;
 
 public class Madvare {
     private int id;

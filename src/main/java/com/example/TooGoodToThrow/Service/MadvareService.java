@@ -1,7 +1,7 @@
-package com.example.tooGoodToThrow.Service;
+package com.example.TooGoodToThrow.Service;
 
-import com.example.tooGoodToThrow.Model.Madvare;
-import com.example.tooGoodToThrow.Repository.MadvareRepo;
+import com.example.TooGoodToThrow.Model.Madvare;
+import com.example.TooGoodToThrow.Repository.MadvareRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -48,8 +48,6 @@ public class MadvareService {
         List<Madvare> madvarer = jdbcTemplate.query(fetchSql, new BeanPropertyRowMapper<>(Madvare.class));
 
         int counter = 1;
-
-        int nyttal = 4;
 
         // Loop through each person and update the desired field
         for (Madvare madvare : madvarer) {
