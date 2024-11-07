@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightblue;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.btn {
+    background-color: #4CAF50; /* Standard grøn */
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.btn-create {
+    /* Ingen specifik stil angivet her */
+}
+
+#btn-viewOne {
+    background-color: #4CAF50; /* Grøn for view-knap */
+}
+
+#btn-deleteOne {
+    background-color: red; /* Rød for delete-knap */
+}
+
+#btn-updateOne {
+    background-color: blue; /* Grøn for update-knap */
+}
