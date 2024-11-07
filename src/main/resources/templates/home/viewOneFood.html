@@ -10,14 +10,27 @@
     <a href="/">
         <button class="btn-index btn" id="btn-index">Til forsiden</button>
     </a>
-    <h1>Køb denne madvare</h1>
-    <p>Id: <span th:text="${madvare.id}"/></p>
-    <p>Madnavn: <span th:text="${madvare.madnavn}"/></p>
-    <p>Pris: <span th:text="${madvare.pris}"/></p>
-    <p>Udløbsdato: <span th:text="${madvare.udlobsdato}"/></p>
-    <p>Afhentningsadresse: <span th:text="${madvare.adresse}"/></p>
-    <p>Virksomhed: <span th:text="${madvare.virksomhed}"/></p>
+    <h1 th:text="'Køb ' + ${madvare.madnavn}">Køb denne madvare</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Pris</th>
+            <th>Udløbsdato</th>
+            <th>Adresse</th>
+            <th>Virksomhed</th>
+        </tr>
+        </thead>
+        <tr>
+            <td th:text="${madvare.pris} + ' kr'"></td>
+            <td th:text="${madvare.udlobsdato}"></td>
+            <td th:text="${madvare.adresse}"></td>
+            <td th:text="${madvare.virksomhed}"></td>
+        </tr>
+    </table>
     <br>
+
+    <input type="text" name="kundeNavn" id="" placeholder="Indtast navn">
+
     <a th:href="@{'/deleteOneFood/' + ${madvare.id}}">
         <button class="btn-deleteOneFood btn" id="btn-deleteOneFood">Bekræft køb af madvare</button>
     </a>
