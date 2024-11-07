@@ -40,9 +40,18 @@ public class MadvareRepo {
     }
 
 
-    public boolean deleteMadvare(int id){
-        String sql = "DELETE FROM madvare WHERE id = ?";
-        return template.update(sql, id) > 0;
+    public void deleteMadvare(int id){
+        String sql = "SELECT antal FROM madvare WHERE id = ?";
+        int gammeltAntal = template.queryForObject(sql, new Object[]{id}, Integer.class);
+
+        if (gammeltAntal >1) {
+            sql = "UPDATE madvare SET antal = ? WHERE id = ?";
+            template.update(sql, gammeltAntal-1, id);
+        }
+        else {
+            sql = "DELETE FROM madvare WHERE id = ?";
+            template.update(sql, id);
+        }
     }
 
     /*public void updateMadvare(Madvare m){

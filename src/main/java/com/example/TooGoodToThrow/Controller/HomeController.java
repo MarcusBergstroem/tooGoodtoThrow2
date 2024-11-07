@@ -60,10 +60,7 @@ public class HomeController {
 
     @GetMapping("/deleteOneFood/{id}")
     public String deleteOneFood(@PathVariable("id") int id){
-        boolean deleted = madvareService.deleteMadvare(id);
-        if (deleted){
-            return "redirect:/";
-        }
+        madvareService.deleteMadvare(id);
         return "redirect:/";
     }
 

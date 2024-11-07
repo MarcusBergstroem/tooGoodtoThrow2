@@ -29,13 +29,9 @@ public class MadvareService {
         return madvareRepo.findMadvareById(id); // Finder en person ved ID
     }
 
-    public Boolean deleteMadvare(int id){
-        boolean deleted = madvareRepo.deleteMadvare(id);
-        if (deleted){
-            renumberMadvarer();
-        }
-        return deleted;
-
+    public void deleteMadvare(int id){
+        madvareRepo.deleteMadvare(id);
+        renumberMadvarer();
     }
 
     /*public void updateMadvare(Madvare m){
