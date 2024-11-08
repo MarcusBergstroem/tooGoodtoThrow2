@@ -8,7 +8,7 @@
 <body>
 <img src="/images/logo.png" alt="Too Good To Throw Logo" class="logo">
 <a href="/">
-    <button class="btn-index btn" id="btn-index">Til forsiden</button>
+    <button class="btn-1 btn" id="btn-index">Til forsiden</button>
 </a>
 <h1>Overskudsmad</h1>
 <table>
@@ -37,14 +37,6 @@
             <a th:href="@{'/viewOneFood/' + ${madvare.id}}">
                 <button class="btn-viewOneFood btn" id="btn-viewOneFood">Køb</button>
             </a>
-            <!--
-            <a th:href="@{'/deleteOneFood/' + ${madvare.id}}">
-                <button class="btn-deleteOneFood btn" id="btn-deleteOneFood">Slet</button>
-            </a>
-            <a th:href="@{'/updateOneFood/' + ${madvare.id}}">
-                <button class="btn-updateOneFood btn" id="btn-updateOneFood">Opdater</button>
-            </a>
-            -->
         </td>
     </tr>
     </tbody>
