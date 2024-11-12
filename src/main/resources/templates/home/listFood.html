@@ -25,6 +25,7 @@
     </tr>
     </thead>
     <tbody>
+    <!-- th annotere at thymeleaf bliver brugt. Her laves et for each loop vha. thymeleaf til at lave en liste af madvarerne -->
     <tr th:each="madvare: ${madvarer}">
         <td th:text="${madvare.id}"></td>
         <td th:text="${madvare.madnavn}"></td>

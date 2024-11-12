@@ -33,19 +33,12 @@ public class MadvareService {
         madvareRepo.deleteMadvare(id);
         renumberMadvarer();
     }
-
-    /*public void updateMadvare(Madvare m){
-        madvareRepo.updateMadvare(m); // Opdaterer en person i databasen
-    }
-    */
-
+    //Laver en liste af madvarerne
     private void renumberMadvarer(){
         String fetchSql = "SELECT * FROM madvare";
         List<Madvare> madvarer = jdbcTemplate.query(fetchSql, new BeanPropertyRowMapper<>(Madvare.class));
-
         int counter = 1;
-
-        // Loop through each person and update the desired field
+        // Looper over madvarene og nummerere dem fra et og op.
         for (Madvare madvare : madvarer) {
             // Opdater det ønskede felt
             String updateSql = "UPDATE madvare SET id = ? WHERE id = ?";
